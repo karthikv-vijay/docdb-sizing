@@ -2,8 +2,6 @@
 
 The purpose of this tool is to help customers determine baseline sizing for their Amazon DocumentDB clusters. Please note that this sizing calculator provides you with baseline configuration to get started and customers should test their applications and make adjustments as required.This tool is not officially supported by AWS.
 
-This tool is currently in BETA.
-
 ## Input
 This tool takes a sizing questionnaire CSV file as first input parameter.Sizing Questionnaire represents data characteristics for your workload. A sample sizing questionnaire is provided in this repository and you can clone and update this file as appropriate for your workload. You can also send an optional second parameter to indicate backup retention period. The default value is 7 and maximum value is 35 days. 
 ## Output
