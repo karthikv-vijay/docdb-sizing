@@ -20,8 +20,8 @@ All fields in the sizing Questionnaire are mandatory and below is the descriptio
 * Database_Name - Name of the database in the cluster
 * Collection_Name - Name of the collection within each database
 * Document_Count - Number of documents in a given collection
-* Average_Document_Size - Average size of a document in a collection
-* Total_Indexes - Total number of indexes in a collection
+* Average_Document_Size - Average size of a document in bytes in a collection
+* Total_Indexes - Total number of indexes in bytes in a collection
 * Index_Size - Total Index size in bytes in a given collection
 * Working Set - Percentage of data that will be queried by the application at peak load
 * Inserts_Per_Day - Total number of insert operations per day for a given collection
