@@ -8,6 +8,8 @@ This tool is currently in BETA.
 This tool takes a sizing questionnaire CSV file as first input parameter.Sizing Questionnaire represents data characteristics for your workload. A sample sizing questionnaire is provided in this repository and you can clone and update this file as appropriate for your workload. You can also send an optional second parameter to indicate backup retention period. The default value is 7 and maximum value is 35 days. 
 ## Output
 This tool provides the pricing dimensions and their respective values for your workload as the output. You can use Amazon DocumentDB pricing calculator and leverage the output data from the sizing calculator to determine pricing estimate for your workload. This is only an estimate and actual cost could vary depending on your use case and access patterns. 
+
+This tool defaults the number of instances in the output to 3 as this gives 99.99% availability for your application. You can increase this number , if you want to scale your read workload. 
 ## Sample usage
     java -jar docdb-sizing.jar "Sizing_Questionnaire.csv" 10
 
