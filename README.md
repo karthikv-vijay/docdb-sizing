@@ -1,4 +1,4 @@
-# Amazon DocumentDB (with MongoDb Compatibility) sizing calculator
+# Amazon DocumentDB (with MongoDB Compatibility) sizing calculator
 
 The purpose of this tool is to help customers determine baseline sizing for their Amazon DocumentDB clusters. Please note that this sizing calculator provides you with baseline configuration to get started and customers should test their applications and make adjustments as required.This tool is not officially supported by AWS.
 
