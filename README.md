@@ -2,20 +2,15 @@
 
 The purpose of this tool is to help Amazon DocumentDB customers determine baseline sizing for their Amazon DocumentDB clusters. Please note that this sizing calculator provides you with baseline configuration to get started and customers should test their applications and make adjustments as required.
 ## Input
-This tool takes a sizing questionnaire CSV file as input.Sizing Questionnaire represents data characteristics for your workload. A sample sizing questionnaire is provided in this repository and you can clone and update this file as appropriate for your workload 
+This tool takes a sizing questionnaire CSV file as first input parameter.Sizing Questionnaire represents data characteristics for your workload. A sample sizing questionnaire is provided in this repository and you can clone and update this file as appropriate for your workload. You can also send an optional second parameter to indicate backup retention period. The default value is 7, i.e. for 7 days and maximum value is 35 days. 
 ## Output
 This tool provides the pricing dimensions and their respective values for your workload as the output. You can use Amazon DocumentDB pricing calculator and leverage the output data from the sizing calculator to determine pricing estimate for your workload. This is only an estimate and actual cost could vary depending on your use case and access patterns. 
 ## Sample usage
-    java -jar docdb-sizing.jar "Sizing_Questionnaire.csv"
+    java -jar docdb-sizing.jar "Sizing_Questionnaire.csv" 10
 
 ## Sample Output 
 
-+------------------+------------+----------------------+----------------------+------------------------+
-|  Instance Type   |  Quantity  |  Storage Size (GB)   |  I/O (In Millions)   |  Backup Storage (GB)   |
-+------------------+------------+----------------------+----------------------+------------------------+
-|  db.r5.12xlarge  |     3      |        16590         |         5833         |          3157          |
-+------------------+------------+----------------------+----------------------+------------------------+
-
+![Alt text](assets/artifacts/Sample_Output.png?raw=true "Sample Output")
 
 Link To Amazon DocumentDB Pricing Calculator -> https://aws.amazon.com/documentdb/pricing/#Pricing_example 
     
