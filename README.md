@@ -1,14 +1,14 @@
 # Amazon DocumentDB (with MongoDb Compatibility) sizing calculator
 
 The purpose of this tool is to help Amazon DocumentDB customers determine baseline sizing for their Amazon DocumentDB clusters. Please note that this sizing calculator provides you with baseline configuration to get started and customers should test their applications and make adjustments as required.
-##Input
+## Input
 This tool takes a sizing questionnaire CSV file as input.Sizing Questionnaire represents data characteristics for your workload. A sample sizing questionnaire is provided in this repository and you can clone and update this file as appropriate for your workload 
-##Output
+## Output
 This tool provides the pricing dimensions and their respective values for your workload as the output. You can use Amazon DocumentDB pricing calculator and leverage the output data from the sizing calculator to determine pricing estimate for your workload. This is only an estimate and actual cost could vary depending on your use case and access patterns. 
-##Sample usage
+## Sample usage
     java -jar docdb-sizing.jar "Sizing_Questionnaire.csv"
 
-##Sample Output 
+## Sample Output 
 
 +------------------+------------+----------------------+----------------------+------------------------+
 |  Instance Type   |  Quantity  |  Storage Size (GB)   |  I/O (In Millions)   |  Backup Storage (GB)   |
@@ -19,7 +19,7 @@ This tool provides the pricing dimensions and their respective values for your w
 
 Link To Amazon DocumentDB Pricing Calculator -> https://aws.amazon.com/documentdb/pricing/#Pricing_example 
     
-##Sizing Questionnaire
+## Sizing Questionnaire
 All fields in the sizing Questionnaire are mandatory and below is the description for each field
 * SLNo - Serial Number to identify each row
 * Database_Name - Name of the Database in the cluster
@@ -34,7 +34,7 @@ All fields in the sizing Questionnaire are mandatory and below is the descriptio
 * Deletes_Per_Day - Total Number of delete operations per day for a given collection
 * Reads_Per_Day - Total Number of read operations per day for a given collection
  
-##Migration From MongoDB to Amazon DocumentDB
+## Migration From MongoDB to Amazon DocumentDB
 If you are migrating from MongoDB to Amazon DocumentDB, you can run the sizing.js script in the assets/artifacts/scripts directory in your Mongo shell by using the following command 
 
     load(“sizing.js”)
